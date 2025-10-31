@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+defaults:
+  - template: "feature_request.yml"
+    name: "💡 機能実装タスク"
+    about: "新しい機能や既存機能の改善を行うためのタスク"
+  - template: "research_task.yml"
+    name: "🔍 調査タスク"
+    about: "技術的調査や情報収集を行うタスク"
+  - template: "bug_report.yml"
+    name: "🐛 バグ報告"
+    about: "バグを報告する"

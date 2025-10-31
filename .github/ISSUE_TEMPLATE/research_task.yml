@@ -1,0 +1,45 @@
+name: 調査タスク
+description: 技術的調査や情報収集を行うタスク
+labels: ["research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        調査概要
+        （調査対象と目的を簡潔に記述）
+
+  - type: input
+    id: topic
+    attributes:
+      label: 調査テーマ
+      description: 調査したい内容や技術・課題を記述
+      placeholder: 新しいログ管理ライブラリの比較
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目的
+      description: なぜこの調査が必要か、ゴールは何かを記述
+      placeholder: 導入するライブラリを選定するため
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 調査手順
+      description: 調査を行う際のステップや方法を事前に考える
+      placeholder: |
+        - 公式ドキュメントを確認
+        - 比較表を作成
+        - 実装サンプルを試す
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 成果物
+      description: 調査後に提出するものを明確にする
+      placeholder: |
+        - レポート
+        - 選定理由
+        - コードサンプル
